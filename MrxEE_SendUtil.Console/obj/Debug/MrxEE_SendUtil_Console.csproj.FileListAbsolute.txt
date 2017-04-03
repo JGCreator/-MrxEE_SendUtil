@@ -1,1 +1,0 @@
-C:\source\GitRepos\MBA\MrxEE_SendUtil\MrxEE_SendUtil_Console\bin\Debug\MrxEE_SendUtil_Console.exe.config
