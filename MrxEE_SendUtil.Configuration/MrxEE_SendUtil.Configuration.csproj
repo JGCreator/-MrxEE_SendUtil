@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlackListItem.cs" />
+    <Compile Include="GroupBlacklist.cs" />
+    <Compile Include="InputOutput.cs" />
     <Compile Include="UtilityConfigurationSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
