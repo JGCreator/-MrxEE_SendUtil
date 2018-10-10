@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="UtilityConfiguration">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="input_output">
+                <xs:complexType>
+                  <xs:attribute name="inputDir" type="xs:string" use="required" />
+                  <xs:attribute name="outputDir" type="xs:string" use="required" />
+                  <xs:attribute name="archiveDir" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="blacklist">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="clear" />
+                    <xs:element name="remove">
+                      <xs:complexType>
+                        <xs:attribute name="groupId" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="add">
+                      <xs:complexType>
+                        <xs:attribute name="groupId" type="xs:int" use="required" />
+                        <xs:attribute name="groupName" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+</xs:schema>
